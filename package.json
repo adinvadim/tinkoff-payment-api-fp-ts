@@ -1,6 +1,6 @@
 {
   "name": "tinkoff-payment-api-fp-ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node.js wrapper of tinkoff api with fp-ts",
   "main": "./dist/index.js",
   "scripts": {
