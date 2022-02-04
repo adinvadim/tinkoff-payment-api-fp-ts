@@ -1,0 +1,13 @@
+{
+  "preset": "jest-puppeteer",
+  "testTimeout": 50000,
+  "testRegex": ".tinkoff-spec.ts$",
+  "rootDir": "../../../",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "src/(.*)": "<rootDir>/src/$1"
+  },
+  "setupFilesAfterEnv": ["./src/test/setup.ts"]
+}

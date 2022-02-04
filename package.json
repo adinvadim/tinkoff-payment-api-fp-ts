@@ -1,0 +1,36 @@
+{
+  "name": "tinkoff-payment-api-fp-ts",
+  "version": "1.0.0",
+  "description": "Node.js wrapper of tinkoff api with fp-ts",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p tsconfig.build.json",
+    "test:e2e": "NODE_ENV=test jest --config ./src/test/e2e/jest-e2e.config.json --runInBand",
+    "test:tinkoff": "NODE_ENV=test jest --config ./src/test/tinkoff-test/jest-e2e.config.json --runInBand"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^17.0.10",
+    "@types/sha.js": "^2.4.0",
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "fp-ts": "^2.11.5",
+    "sha.js": "^2.4.11"
+  },
+  "devDependencies": {
+    "@types/expect-puppeteer": "^4.4.7",
+    "@types/jest": "^27.4.0",
+    "@types/jest-environment-puppeteer": "^4.4.1",
+    "@types/puppeteer": "^5.4.4",
+    "chromium": "^3.0.3",
+    "jest": "^27.4.5",
+    "jest-puppeteer": "^6.0.3",
+    "nanoid": "^3.2.0",
+    "puppeteer": "^13.0.1",
+    "puppeteer-core": "^13.0.1",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
+  }
+}
