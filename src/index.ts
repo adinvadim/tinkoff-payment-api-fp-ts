@@ -69,8 +69,6 @@ export const getToken = <T extends object>(dto: T, password: string) => {
     return bString.localeCompare(aString);
   });
 
-  console.log('concat value', zipData);
-
   /** Concat all value */
   const concatString = zipData.reduce(
     (acc, curr) => `${Object.values(curr)[0]}${acc}`,
@@ -94,7 +92,6 @@ const basicRequest =
     const data = Object.assign({}, withTerminalKey, {
       Token: getToken(withTerminalKey, password),
     });
-    console.log('DATA', data);
     return pipe(
       axiosCallToTask(() =>
         request.post<R, AxiosResponse<R>, WithSecrets<T>>(options.method, data),
