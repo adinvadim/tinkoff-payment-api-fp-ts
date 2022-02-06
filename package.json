@@ -10,7 +10,7 @@
     "test:tinkoff": "NODE_ENV=test jest --config ./src/test/tinkoff-test/jest-e2e.config.json --runInBand"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@types/node": "^17.0.10",
     "@types/sha.js": "^2.4.0",
